@@ -11,7 +11,7 @@
   gtag('config', 'UA-102176832-1');
 </script>
 
-<title>DR. Mohammad Haghiri</title>
+<title>Dr. Mohammad Haghiri</title>
 <!-- for-mobile-apps -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -63,23 +63,44 @@ body {
     font-weight: bold;
 }
 
-/* Move tabs to top left */
+/* Move tabs to top left and make them tighter */
 .navbar-default .navbar-nav {
     float: left;
     margin-left: 0;
+    margin-top: 10px;
 }
 
-/* Social media button styles */
+.navbar-nav > li {
+    margin-right: 15px; /* Space between menu items */
+}
+
+/* Move figure to right */
+.about-grids-right {
+    float: right;
+}
+
+/* Social media button styles with green buttons */
 .social-links a {
     margin: 10px;
     display: inline-block;
+    text-decoration: none;
 }
 
-/* Optional styling for social media icons */
-.social-links img {
-    width: 32px;
-    height: 32px;
+.social-links .btn {
+    background-color: #28a745; /* green color */
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    text-align: center;
+    display: inline-block;
+    transition: background-color 0.3s ease;
 }
+
+.social-links .btn:hover {
+    background-color: #218838; /* darker green on hover */
+}
+
 </style>
 
 </head>
@@ -176,10 +197,18 @@ body {
                         </div>
 		<!-- Social media buttons -->
 		<div class="social-links">
-		    <a href="https://scholar.google.com/citations?hl=nl&user=0_YEtSYAAAAJ" target="_blank"><img src="images/google_scholar.png" alt="Google Scholar" /></a>
-		    <a href="https://www.linkedin.com/in/mohammad-haghiri77/" target="_blank"><img src="images/linkedin.png" alt="LinkedIn" /></a>
-		    <a href="https://www.researchgate.net/profile/Mohammad-Haghiri" target="_blank"><img src="images/researchgate.png" alt="ResearchGate" /></a>
-		    <a href="https://orcid.org/0000-0003-0528-4260" target="_blank"><img src="images/orcid.png" alt="ORCID" /></a>
+		    <a href="https://scholar.google.com/citations?hl=nl&user=0_YEtSYAAAAJ" target="_blank">
+                <span class="btn">Google Scholar</span>
+            </a>
+		    <a href="https://www.linkedin.com/in/mohammad-haghiri77/" target="_blank">
+                <span class="btn">LinkedIn</span>
+            </a>
+		    <a href="https://www.researchgate.net/profile/Mohammad-Haghiri" target="_blank">
+                <span class="btn">ResearchGate</span>
+            </a>
+		    <a href="https://orcid.org/0000-0003-0528-4260" target="_blank">
+                <span class="btn">ORCID</span>
+            </a>
 		</div>
 		   
 		</div>
