@@ -11,7 +11,7 @@
   gtag('config', 'UA-102176832-1');
 </script>
 
-<title>Dr. Mohammad Haghiri</title>
+<title> Mohammad Haghiri</title>
 <!-- for-mobile-apps -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -63,17 +63,31 @@ body {
     font-weight: bold;
 }
 
-/* Move tabs to top left, make them larger and bold */
+/* Change tab colors to blue and add space */
 .navbar-default .navbar-nav {
     float: left;
     margin-left: 0;
     margin-top: 10px;
     font-size: 18px;
     font-weight: bold;
+    color: #007bff; /* blue color */
 }
 
-/.navbar-nav > li {
+.navbar-nav > li {
     margin-right: 20px; /* Space between menu items */
+}
+
+.navbar-nav > li > a {
+    color: #007bff; /* Change tab text to blue */
+}
+
+.navbar-nav > li > a:hover {
+    color: #0056b3; /* Darker blue on hover */
+}
+
+/* Add a dark line between top and body */
+.header {
+    border-bottom: 2px solid #333;
 }
 
 /* Remove large banner (if it was a banner class) */
@@ -126,7 +140,7 @@ body {
 					<span class="icon-bar"></span>
 				  </button>
 					<div class="logo">
-						<h1><a class="navbar-brand" href="index.html">Mohammad Haghiri</a></h1>
+						<h1><a class="navbar-brand" href="https://mhaghiri.github.io">Mohammad Haghiri</a></h1> <!-- Updated link to display base URL only -->
 					</div>
 				</div>
 
@@ -225,6 +239,8 @@ body {
 				<div class="col-md-4 footer-grid ">
                     <h3>Contact</h3>
                     <p>Email: mhaghi2@uic.edu</p>
+                    <p>Building & Room: 3156 SES</p> <!-- Added Building & Room -->
+                    <p>Address: 845 West Taylor St.</p> <!-- Added Address -->
                     <!--<p>Phone: XXX-XXX-XXXX</p> -->
                     <!--<p>Office: XXXXXX</p> -->
 				
