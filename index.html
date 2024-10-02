@@ -97,9 +97,11 @@ body {
     display: none;
 }
 
-/* Make the line between header and body thicker */
+/* Make the line between header and body thicker, increase header height */
 .header {
     border-bottom: 4px solid #333;
+    padding-top: 1cm; /* Add space on top */
+    padding-bottom: 1cm; /* Add space on bottom */
 }
 
 /* Remove large banner (if it was a banner class) */
@@ -110,6 +112,13 @@ body {
 /* Move figure to right */
 .about-grids-right {
     float: right;
+}
+
+/* Align and format body text for readability */
+.about p, .panel-body p {
+    text-align: justify; /* Justify text for even alignment */
+    line-height: 1.6; /* Improve readability with spacing */
+    margin-bottom: 1em; /* Add spacing between paragraphs */
 }
 
 /* Change specific text to blue */
