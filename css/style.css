@@ -9,6 +9,7 @@ p {
     margin: 0;
     font-size: 16px;
     line-height: 1.6; /* Improve readability */
+    text-align: justify; /* Align paragraphs for fixed alignment */
 }
 
 /* Headings */
@@ -18,12 +19,22 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
 
+/* Increase header height */
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+    height: 100px; /* Increase height of header */
+    display: flex;
+    align-items: center; /* Center content vertically */
+}
+
 /* Change the color of the top "Mohammad Haghiri" to black */
 .navbar-brand {
     color: #000000 !important; /* Sets the color to black */
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
-    font-size: 1.3em;
+    font-size: 1.5em; /* Increase font size for better visibility */
+    line-height: normal; /* Ensure alignment within header */
 }
 
 /* Move the "Home" button below and change its color to blue */
@@ -32,6 +43,7 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     flex-direction: column; /* Aligns the Home button vertically */
     align-items: center; /* Centers the button */
+    justify-content: center; /* Center button vertically */
 }
 
 /* Style the "Home" button */
@@ -101,11 +113,6 @@ body a, .navbar-nav > li > a, .menu__link {
 .navbar-default {
     background: none;
     border: none;
-}
-
-.navbar {
-    margin-bottom: 0;
-    border-radius: 0;
 }
 
 /* Additional styling for positioning and visual enhancements */
