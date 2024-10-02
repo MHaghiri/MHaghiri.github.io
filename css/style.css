@@ -19,31 +19,24 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
 
-/* Increase header height */
+/* Navbar container */
 .navbar {
     margin-bottom: 0;
     border-radius: 0;
-    height: 100px; /* Increase height of header */
+    height: auto; /* Allow header height to adjust based on content */
     display: flex;
-    align-items: center; /* Center content vertically */
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center content horizontally */
+    padding-top: 10px; /* Add padding for spacing */
 }
 
-/* Change the color of the top "Mohammad Haghiri" to black */
-.navbar-brand {
-    color: #000000 !important; /* Sets the color to black */
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-    font-size: 1.5em; /* Increase font size for better visibility */
-    line-height: normal; /* Ensure alignment within header */
-}
-
-/* Move the "Home" button below and change its color to blue */
+/* Home button placement */
 .navbar-nav {
-    margin: 0; /* Adjust margin to reposition the button */
+    margin: 0; /* Remove margin */
+    padding: 0; /* Remove padding */
     display: flex;
-    flex-direction: column; /* Aligns the Home button vertically */
-    align-items: center; /* Centers the button */
-    justify-content: center; /* Center button vertically */
+    justify-content: center; /* Center the Home button horizontally */
+    order: -1; /* Move the button to the top of the header */
 }
 
 /* Style the "Home" button */
@@ -52,6 +45,7 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 16px; /* Adjust size if needed */
     margin: 0.5em 0; /* Adds spacing around the button */
     text-transform: uppercase; /* Keeps the text in uppercase */
+    font-weight: 700; /* Make the text bold */
 }
 
 /* Change hover color for the "Home" button */
@@ -59,63 +53,17 @@ h1, h2, h3, h4, h5, h6 {
     color: #003399; /* Darker blue for hover effect */
 }
 
-/* Menu Links */
-.menu--francisco .menu__link {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 600;
-    color: #4A4A4A;
-}
-
-/* Banner Info */
-.banner-info h3 {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 900;
-    font-size: 2.5em;
-}
-
-/* Service Titles */
-.services h3, .testimonials h3, .about h3, .team h3, .pricing-plans h3, h3.title, .gallery h3, .mail h3 {
+/* Logo styling (name) */
+.navbar-brand {
+    color: #000000 !important; /* Sets the color to black */
     font-family: 'Roboto', sans-serif;
     font-weight: 700;
-    font-size: 2em;
-    color: #333333;
+    font-size: 1.5em; /* Increase font size for better visibility */
+    line-height: normal; /* Ensure alignment within header */
+    margin-top: 10px; /* Add spacing below Home button */
 }
 
-/* Footer */
-.footer-grid h3 {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-    font-size: 1.5em;
-}
-
-.footer-grid p, .footer-grid input[type="email"] {
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 14px;
-    color: #b3b3b3;
-}
-
-/* Buttons */
-input[type="submit"], .more a {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-    font-size: 14px;
-}
-
-/* General Link Styling */
-body a, .navbar-nav > li > a, .menu__link {
-    font-family: 'Source Sans Pro', sans-serif;
-}
-
-/* Import the fonts */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Source+Sans+Pro:wght@300;400;600&display=swap');
-
-/* Navbar Adjustments */
-.navbar-default {
-    background: none;
-    border: none;
-}
-
-/* Additional styling for positioning and visual enhancements */
+/* Change top "Mohammad Haghiri" to black */
 .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
     color: #000000; /* Black for hover effect */
 }
@@ -124,3 +72,6 @@ body a, .navbar-nav > li > a, .menu__link {
     color: #0066cc;
     background-color: transparent;
 }
+
+/* Import the fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Source+Sans+Pro:wght@300;400;600&display=swap');
