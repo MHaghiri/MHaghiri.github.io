@@ -1,10 +1,3 @@
-
-<!--
-Author: W3layouts
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
--->
 <!DOCTYPE html>
 <html>
 <head>
@@ -31,7 +24,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
 <!-- //js -->
 <!-- animation-effect -->
-<link href="css/animate.min.css" rel="stylesheet"> 
+<link href="css/animate.min.css" rel="stylesheet">
 <script src="js/wow.min.js"></script>
 <script>
  new WOW().init();
@@ -44,7 +37,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <script type="text/javascript" src="js/easing.js"></script>
 <script type="text/javascript">
 	jQuery(document).ready(function($) {
-		$(".scroll").click(function(event){		
+		$(".scroll").click(function(event){
 			event.preventDefault();
 			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
 		});
@@ -52,13 +45,147 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 </script>
 <!-- start-smoth-scrolling -->
 
-</head>
-	
+<style>
+/* Change background color */
+body {
+    background-color: #f0f8ff; /* light blue */
+}
 
-<link rel="icon" 
-     type="image/png" 
+.about {
+    background-color: #ffffff; /* white */
+}
+
+/* Center name, make it bold and bigger, and change color to black */
+.logo h1 {
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #000000; /* Black */
+}
+
+/* Change tab colors to dark blue */
+.navbar-default .navbar-nav {
+    float: left;
+    margin-left: 0;
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.navbar-nav > li {
+    margin-right: 20px; /* Space between menu items */
+}
+
+.navbar-nav > li > a {
+    color: #003366; /* Dark blue color */
+}
+
+.navbar-nav > li > a:hover {
+    color: #002244; /* Darker blue on hover */
+}
+
+/* Make the line between header and body thicker, increase header height */
+.header {
+    border-bottom: 4px solid #333;
+    padding-top: 1cm; /* Add space on top */
+    padding-bottom: 1cm; /* Add space on bottom */
+}
+
+/* Remove large banner */
+.banner1 {
+    display: none;
+}
+
+/* Move figure to right */
+.about-grids-right {
+    float: right;
+}
+
+/* Align and format body text for readability */
+.about p, .panel-body p {
+    text-align: justify; /* Justify text for even alignment */
+    line-height: 1.6; /* Improve readability with spacing */
+    margin-bottom: 1em; /* Add spacing between paragraphs */
+    font-weight: normal; /* Make normal text */
+}
+
+/* Bold specific headings */
+.panel-body h2 {
+    font-weight: bold; /* Keep headings bold */
+}
+
+/* Change specific text to blue */
+.panel-heading p a, .panel-heading a {
+    color: #007bff; /* Blue color */
+}
+
+.panel-heading a:hover {
+    color: #0056b3; /* Darker blue on hover */
+}
+
+/* Social media button styles with blue buttons */
+.social-links a {
+    margin: 10px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.social-links .btn {
+    background-color: #87CEFA; /* Blue color */
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    text-align: center;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.social-links .btn:hover {
+    background-color: #00BFFF; /* Darker blue on hover */
+}
+
+/* Change footer background color to darker gray */
+.footer {
+    background-color: #d3d3d3; /* Darker gray */
+    color: #333333; /* Dark gray text */
+    padding: 20px 0;
+    border-top: 4px solid #333; /* Add border line similar to top */
+}
+
+/* Change footer text to dark blue */
+.footer h3, .footer p, .footer a {
+    color: #003366; /* Dark blue */
+    text-decoration: none;
+}
+
+/* Change name in footer to black */
+.footer h3 {
+    color: #000000; /* Black */
+}
+
+.footer a:hover {
+    color: #002244; /* Darker blue on hover */
+}
+
+/* Change footer tabs to black */
+.footer-grids1-left ul li a {
+    color: black;
+}
+
+.footer-grids1-left ul li a:hover {
+    color: #333333; /* Slightly darker black on hover */
+}
+
+</style>
+
+</head>
+
+<link rel="icon"
+     type="image/png"
      href="images/water_drop.png">
-	
+
 <body>
 <!-- header -->
 	<div class="header">
@@ -81,15 +208,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
 					<nav class="menu menu--francisco">
 						<ul class="nav navbar-nav menu__list">
-							<li class="menu__item "><a href="index.html" class="menu__link"><span class="menu__helper">Home</span></a></li>
+							<li class="menu__item"><a href="index.html" class="menu__link"><span class="menu__helper">Home</span></a></li>
 							<li class="menu__item"><a href="research_edit.html" class="menu__link"><span class="menu__helper">Research</span></a></li>
 							<li class="menu__item"><a href="publications.html" class="menu__link"><span class="menu__helper">Publications</span></a></li>
-						<!--	<li class="menu__item"><a href="interests.html" class="menu__link"><span class="menu__helper">Interests & Resources</span></a></li> -->
-			    			
 							<li class="menu__item menu__item--current"><a href="github.html" class="menu__link"><span class="menu__helper">Github</span></a></li>
-
-							
-	<!--<li class="menu__item"><a href="#CONTACT" class="menu__link"><span class="menu__helper">Contact</span></a></li>-->
 						</ul>
 					</nav>
 				</div>
@@ -98,51 +220,32 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		</div>
 	</div>
 <!-- //header -->
-<!-- banner -->
-	<div class="banner1">
-		<div class="container">
-			<h2 class=<a></a> <span>Github repositories</span></h2>
-		</div>
-	</div>
-<!-- //banner -->
 <!-- about -->
 <div class="about">
     <div class="container">
         <div class="about-grids">
-		<!-- <h2>Interested in joining the group?</h2>-->
-		<!--<br><br><br>-->
-		<!--<img src="images/Panther_Beach,_CA_Birdies.jpg" alt=" " class="img-responsive" />-->
-
             <div class="col-md-6 about-grids-left">
                 <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
                     <div class="panel panel-default">
                         <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
                             <div class="panel-body panel_text">
-
-				    Code created in my lab is always open-source. Check out some of our work at the links below.
-				      <br><br>
-				    <a href="https://github.com/KCallaghan/WTM" target="_blank">The Water Table Model</a>
-				    <br>
-				    <a href="https://github.com/KCallaghan/Barnes2020-FillSpillMerge" target="_blank">Fill-Spill-Merge</a>
-				    <br>
-				    <a href="https://github.com/KCallaghan/Barnes2019-DepressionHierarchy" target="_blank">Depression Hierarchy</a>
-				    <br>
-				    <a href="https://github.com/KCallaghan/FlowFill" target="_blank">Flowfill</a>
-				    <br>
-
-
-                  </div>
+                                Code created in my lab is always open-source. Check out some of our work at the links below.
+                                <br><br>
+                                <a href="https://github.com/KCallaghan/WTM" target="_blank">The Water Table Model</a>
+                                <br>
+                                <a href="https://github.com/KCallaghan/Barnes2020-FillSpillMerge" target="_blank">Fill-Spill-Merge</a>
+                                <br>
+                                <a href="https://github.com/KCallaghan/Barnes2019-DepressionHierarchy" target="_blank">Depression Hierarchy</a>
+                                <br>
+                                <a href="https://github.com/KCallaghan/FlowFill" target="_blank">Flowfill</a>
+                                <br>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-
-                             
-                            </div>
-                        </div>
-            </div>
-            <div class="clearfix"> </div>
         </div>
+        <div class="clearfix"> </div>
     </div>
 </div>
 <!-- //about -->
@@ -153,15 +256,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<div class="col-md-4 footer-grid ">
                     <h3>Contact</h3>
                     <p>Email: mhaghi2@uic.edu</p>
-                    <!--<p>Phone: XXX-XXX-XXXX</p> -->
-                    <!--<p>Office: XXXXXX</p> -->
-				
 				</div>
                 <div class="col-md-4 footer-grid ">
                     <br><br><br>
-                      <!--<p>Mail: MC XXX-XX</p> -->
-                      <!--<p>1200 E. California Blvd.</p> -->
-                      <!--<p>Pasadena, CA 91125</p> -->
                 </div>
                 <div class="clearfix"> </div>
 			</div>
@@ -171,12 +268,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						<li class="menu__item"><a href="index.html">Home</a></li>
 						<li class="menu__item"><a href="research_edit.html" class="menu__link"><span class="menu__helper">Research</span></a></li>
 						<li class="menu__item"><a href="publications.html" class="menu__link"><span class="menu__helper">Publications</span></a></li>
-					<!--	<li class="menu__item"><a href="interests.html" class="menu__link"><span class="menu__helper">Interests</span></a></li> -->			    
-			    	<li class="active"><a href="github.html" class="menu__link"><span class="menu__helper">Github</span></a></li>
+						<li class="active"><a href="github.html" class="menu__link"><span class="menu__helper">Github</span></a></li>
 					</ul>
-				</div>
-				<div class="footer-grids1-right">
-					<!--<p class="animated wow slideInRight" data-wow-delay=".01s">Design by <a href="http://w3layouts.com/">W3layouts</a></p>-->
 				</div>
 				<div class="clearfix"> </div>
 			</div>
@@ -190,18 +283,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!-- here stars scrolling icon -->
 	<script type="text/javascript">
 		$(document).ready(function() {
-			/*
-				var defaults = {
-				containerID: 'toTop', // fading element id
-				containerHoverID: 'toTopHover', // fading element hover id
-				scrollSpeed: 1200,
-				easingType: 'linear' 
-				};
-			*/
-								
 			$().UItoTop({ easingType: 'easeOutQuart' });
-								
-			});
+		});
 	</script>
 <!-- //here ends scrolling icon -->
 </body>
