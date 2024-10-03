@@ -10,7 +10,6 @@
 
   gtag('config', 'UA-102176832-1');
 </script>
-
 <title>Mohammad Haghiri</title>
 <!-- for-mobile-apps -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -25,7 +24,7 @@
 <script type="text/javascript" src="js/jquery-2.1.4.min.js"></script>
 <!-- //js -->
 <!-- animation-effect -->
-<link href="css/animate.min.css" rel="stylesheet"> 
+<link href="css/animate.min.css" rel="stylesheet">
 <script src="js/wow.min.js"></script>
 <script>
  new WOW().init();
@@ -38,7 +37,7 @@
 <script type="text/javascript" src="js/easing.js"></script>
 <script type="text/javascript">
 	jQuery(document).ready(function($) {
-		$(".scroll").click(function(event){		
+		$(".scroll").click(function(event){
 			event.preventDefault();
 			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
 		});
@@ -62,7 +61,7 @@ body {
     font-size: 36px;
     font-weight: bold;
     margin-top: 20px;
-    color: #000000; /* Black */
+    color: #000000 !important; /* Ensure text is black */
 }
 
 /* Change tab colors to dark blue */
@@ -86,19 +85,6 @@ body {
     color: #002244; /* Darker blue on hover */
 }
 
-/* Hide the Research tab */
-.navbar-nav > li:nth-child(2) {
-    display: none;
-}
-
-/* Hide the Publications, Learning Resources, GitHub, and Work with Me tabs */
-.navbar-nav > li:nth-child(3),
-.navbar-nav > li:nth-child(4),
-.navbar-nav > li:nth-child(5),
-.navbar-nav > li:nth-child(6) {
-    display: none;
-}
-
 /* Make the line between header and body thicker, increase header height */
 .header {
     border-bottom: 4px solid #333;
@@ -106,7 +92,7 @@ body {
     padding-bottom: 1cm; /* Add space on bottom */
 }
 
-/* Remove large banner (if it was a banner class) */
+/* Remove large banner */
 .banner1 {
     display: none;
 }
@@ -191,21 +177,18 @@ body {
 .footer-grids1-left ul li a:hover {
     color: #333333; /* Slightly darker black on hover */
 }
-
 </style>
 
 </head>
+
+<link rel="icon"
+     type="image/png"
+     href="images/water_drop.png">
 
 <body>
 <!-- header -->
 	<div class="header">
 		<div class="container">
-			<!-- Logo with Name -->
-			<div class="logo">
-				<h1><a class="navbar-brand" href="https://mhaghiri.github.io">Mohammad Haghiri</a></h1> <!-- Updated link to display base URL only -->
-			</div>
-
-			<!-- Navbar at top for Home button -->
 			<nav class="navbar navbar-default">
 				<!-- Brand and toggle get grouped for better mobile display -->
 				<div class="navbar-header">
@@ -215,13 +198,16 @@ body {
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				  </button>
+					<div class="logo">
+						<h1><a class="navbar-brand" href="index.html">Mohammad Haghiri</a></h1>
+					</div>
 				</div>
 
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse nav-wil" id="bs-example-navbar-collapse-1">
 					<nav class="menu menu--francisco">
 						<ul class="nav navbar-nav menu__list">
-							<li class="menu__item menu__item--current"><a href="index.html" class="menu__link"><span class="menu__helper">Home</span></a></li>
+							<li class="menu__item"><a href="index.html" class="menu__link"><span class="menu__helper">Home</span></a></li>
 						</ul>
 					</nav>
 				</div>
@@ -239,125 +225,50 @@ body {
                     <div class="panel panel-default">
                         <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
                             <div class="panel-body panel_text">
-				    <h2>Welcome to My Website</h2>
-				    <br><br><br>
-                                <p> I am a Ph.D. student at the University of Illinois Chicago, currently specializing in Earth and Environmental Sciences. My research is centered around using the Water Table Model (WTM) to predict climate-induced changes in global water tables from 1500CE to 3000CE, with a focus on understanding groundwater resources and the impact of climate variables. By analyzing data from both historical records and future projections, my work aims to enhance water resource management and support climate change adaptation strategies. </p>
-
-				<p> I hold a Master's degree in Hydrogeology from the University of Tehran, where my research involved hydrochemical and isotopic analysis of karst aquifers in the Hashtgerd Basin, Iran. This study highlighted the critical nature of karst aquifers for regional drinking water supply and underscored the importance of effective water resource management to mitigate the impacts of drilling activities. My undergraduate research at Kharazmi University examined runoff harvesting for agricultural water consumption in arid regions, using remote sensing and field visits to develop sustainable water management solutions. </p>
-
-				<p> Beyond my academic research, I have experience as a teaching assistant in courses ranging from hydrogeology to global environmental change, and I have actively contributed to the scientific community as a reviewer for journals in water resource management. My diverse background in hydrogeology, climate change, and environmental sciences reflects my commitment to addressing critical challenges in water sustainability and climate resilience. </p>
-				    <br><br><br>
-				    <br><br><br>
-					
-				<h2>News</h2>
-				    <br>
-				    <p> <b> <em> October 2024: </em> </b> I'm delighted to announce that my abstract, focusing on using the Water Table Model (WTM) to predict climate-induced changes in North American water table levels from 2020 to 2100, has been accepted for presentation at the AGU24 conference this December in Washington, D.C. </p>
-				    <p> <b> <em> July 2024: </em> </b> A new study explores the feasibility of constructing a runoff reservoir in Kariyan village, Hormozgan, Iran, utilizing remote sensing and field analysis to enhance agricultural water management in response to inconsistent rainfall patterns. </p>
-				    <p> <b> <em> February 2024: </em> </b> A recent study utilizing fuzzy logic models (FAHP) and analytical hierarchy processes (AHP) unveils significant potential for karst aquifer development in North Iran's Hashtgerd watershed, offering insights into addressing water scarcity through unconventional water resources.</p>
-				    <p> <b> <em> August 2023: </em> </b> I have embarked on my Ph.D. journey in Earth and Environmental Sciences at the University of Illinois Chicago, focusing on predicting global water table changes due to climate impacts. </p>
-				    <p> <b> <em> June 2022: </em> </b> I successfully completed my Master’s in Hydrogeology at the University of Tehran, where I focused on hydrochemical and isotopic analysis of karst aquifers. </p>
-				    <p> <b> <em> April 2021: </em> </b> New study reveals the comparative economic and engineering advantages of constructing freshwater reservoirs across Iran’s provinces, with Khorasan-South emerging as the most economical. </p>
-				    <p> <b> <em> September 2020: </em> </b> I’m excited to have started my Master’s in Hydrogeology at the University of Tehran, focusing on the fascinating study of karst aquifers and their hydrochemical dynamics. </p>
-			    </div>
+                                <h2>Welcome to My Website</h2>
+                                <p>I am a Ph.D. student at the University of Illinois Chicago, currently specializing in Earth and Environmental Sciences...</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-	<div class="about-grids">
-             <div class="col-md-6 about-grids-right">
-                <img src="images/thumbnail_81658.jpg" alt=" " class="img-responsive" />
-		      <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-                            <div class="panel-heading panel_text">
-                              <h3>Mohammad Haghiri</h3>
-				    <br>
-		Ph.D Student, University of Illinois Chicago &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp   	
-				    
-				    <p> <a href="https://eaes.uic.edu/profiles/haghiri-mohammad/" target="_blank"> Department of Earth and Environmental Sciences (UIC) </a> </p>
-				
-				    <a href="images/Mohammad Haghiri_CV_public.pdf" target="_blank"> CV</a>
-	
-                            </div>
-                        </div>
-		<!-- Social media buttons -->
-		<div class="social-links">
-		    <a href="https://scholar.google.com/citations?hl=nl&user=0_YEtSYAAAAJ" target="_blank">
-                <span class="btn">Google Scholar</span>
-            </a>
-		    <a href="https://www.linkedin.com/in/mohammad-haghiri77/" target="_blank">
-                <span class="btn">LinkedIn</span>
-            </a>
-		    <a href="https://www.researchgate.net/profile/Mohammad-Haghiri" target="_blank">
-                <span class="btn">ResearchGate</span>
-            </a>
-		    <a href="https://orcid.org/0000-0003-0528-4260" target="_blank">
-                <span class="btn">ORCID</span>
-            </a>
-		</div>
-		   
-		</div>
-            </div>
-            <div class="clearfix"> </div>
         </div>
     </div>
 </div>
 <!-- //about -->
 <!-- footer -->
-	<div class="footer"><a name="CONTACT Information"></a>
+	<div class="footer"><a name="CONTACT"></a>
 		<div class="container">
 			<div class="footer-grids">
 				<div class="col-md-4 footer-grid ">
-                    <h3>Contact Information</h3>
+                    <h3>Contact</h3>
                     <p>Email: mhaghi2@uic.edu</p>
-                    <p>Building & Room: 3156 SES</p> <!-- Added Building & Room -->
-                    <p>Address: 845 West Taylor St.</p> <!-- Added Address -->
-                    <!--<p>Phone: XXX-XXX-XXXX</p> -->
-                    <!--<p>Office: XXXXXX</p> -->
-				
 				</div>
-                <div class="col-md-4 footer-grid ">
-                    <br><br><br>
-                      <!--<p>Mail: MC XXX-XX</p> -->
-                      <!--<p>1200 E. California Blvd.</p> -->
-                      <!--<p>Pasadena, CA 91125</p> -->
-                </div>
                 <div class="clearfix"> </div>
 			</div>
 			<div class="footer-grids1">
 				<div class="footer-grids1-left ">
                     <ul>
-						<li class="active"><a href="index.html">Home</a></li>
+						<li class="menu__item"><a href="index.html">Home</a></li>
 						<li class="menu__item"><a href="research_edit.html" class="menu__link"><span class="menu__helper">Research</span></a></li>
 						<li class="menu__item"><a href="publications.html" class="menu__link"><span class="menu__helper">Publications</span></a></li>
-			    			<li class="menu__item"><a href="github.html" class="menu__link"><span class="menu__helper">Github</span></a></li>
+						<li class="active"><a href="github.html" class="menu__link"><span class="menu__helper">Github</span></a></li>
 					</ul>
-				</div>
-				<div class="footer-grids1-right">
-					<!--<p class="animated wow slideInRight" data-wow-delay=".01s">Design by <a href="http://w3layouts.com/">W3layouts</a></p>-->
 				</div>
 				<div class="clearfix"> </div>
 			</div>
 		</div>
 	</div>
 <!-- //footer -->
-	
+
 <!-- for bootstrap working -->
 	<script src="js/bootstrap.js"></script>
 <!-- //for bootstrap working -->
 <!-- here stars scrolling icon -->
 	<script type="text/javascript">
 		$(document).ready(function() {
-			/*
-				var defaults = {
-				containerID: 'toTop', // fading element id
-				containerHoverID: 'toTopHover', // fading element hover id
-				scrollSpeed: 1200,
-				easingType: 'linear' 
-				};
-			*/
-								
 			$().UItoTop({ easingType: 'easeOutQuart' });
-								
-			});
+		});
 	</script>
 <!-- //here ends scrolling icon -->
 </body>
