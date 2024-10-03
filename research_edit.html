@@ -1,9 +1,3 @@
-<!--
-Author: W3layouts
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
--->
 <!DOCTYPE html>
 <html>
 <head>
@@ -52,6 +46,141 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 </script>
 <!-- start-smoth-scrolling -->
 
+<style>
+/* Change background color */
+body {
+    background-color: #f0f8ff; /* light blue */
+}
+
+.about {
+    background-color: #ffffff; /* white */
+}
+
+/* Center name, make it bold and bigger, and change color to black */
+.logo h1 {
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    margin-top: 20px;
+    color: #000000; /* Black */
+}
+
+/* Change tab colors to dark blue */
+.navbar-default .navbar-nav {
+    float: left;
+    margin-left: 0;
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.navbar-nav > li {
+    margin-right: 20px; /* Space between menu items */
+}
+
+.navbar-nav > li > a {
+    color: #003366; /* Dark blue color */
+}
+
+.navbar-nav > li > a:hover {
+    color: #002244; /* Darker blue on hover */
+}
+
+/* Make the line between header and body thicker, increase header height */
+.header {
+    border-bottom: 4px solid #333;
+    padding-top: 1cm; /* Add space on top */
+    padding-bottom: 1cm; /* Add space on bottom */
+}
+
+/* Remove large banner */
+.banner1 {
+    display: none;
+}
+
+/* Move figure to right */
+.about-grids-right {
+    float: right;
+}
+
+/* Align and format body text for readability */
+.about p, .panel-body p {
+    text-align: justify; /* Justify text for even alignment */
+    line-height: 1.6; /* Improve readability with spacing */
+    margin-bottom: 1em; /* Add spacing between paragraphs */
+    font-weight: normal; /* Make normal text */
+}
+
+/* Bold specific headings */
+.panel-body h2 {
+    font-weight: bold; /* Keep headings bold */
+}
+
+/* Change specific text to blue */
+.panel-heading p a, .panel-heading a {
+    color: #007bff; /* Blue color */
+}
+
+.panel-heading a:hover {
+    color: #0056b3; /* Darker blue on hover */
+}
+
+/* Social media button styles with blue buttons */
+.social-links a {
+    margin: 10px;
+    display: inline-block;
+    text-decoration: none;
+}
+
+.social-links .btn {
+    background-color: #87CEFA; /* Blue color */
+    color: white;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 14px;
+    text-align: center;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.social-links .btn:hover {
+    background-color: #00BFFF; /* Darker blue on hover */
+}
+
+/* Change footer background color to darker gray */
+.footer {
+    background-color: #d3d3d3; /* Darker gray */
+    color: #333333; /* Dark gray text */
+    padding: 20px 0;
+    border-top: 4px solid #333; /* Add border line similar to top */
+}
+
+/* Change footer text to dark blue */
+.footer h3, .footer p, .footer a {
+    color: #003366; /* Dark blue */
+    text-decoration: none;
+}
+
+/* Change name in footer to black */
+.footer h3 {
+    color: #000000; /* Black */
+}
+
+.footer a:hover {
+    color: #002244; /* Darker blue on hover */
+}
+
+/* Change footer tabs to black */
+.footer-grids1-left ul li a {
+    color: black;
+}
+
+.footer-grids1-left ul li a:hover {
+    color: #333333; /* Slightly darker black on hover */
+}
+
+</style>
+
 </head>
 
 <link rel="icon"
@@ -83,9 +212,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							<li class="menu__item"><a href="index.html" class="menu__link"><span class="menu__helper">Home</span></a></li>
 							<li class="menu__item menu__item--current"><a href="research_edit.html" class="menu__link"><span class="menu__helper">Research</span></a></li>
 							<li class="menu__item"><a href="publications.html" class="menu__link"><span class="menu__helper">Publications</span></a></li>
-						<!--	<li class="menu__item"><a href="interests.html" class="menu__link"><span class="menu__helper">Interests & Resources</span></a></li> -->
-			    			<li class="menu__item"><a href="github.html" class="menu__link"><span class="menu__helper">Github</span></a></li>
-	<!--<li class="menu__item"><a href="#CONTACT" class="menu__link"><span class="menu__helper">Contact</span></a></li>-->
+							<li class="menu__item"><a href="github.html" class="menu__link"><span class="menu__helper">Github</span></a></li>
 						</ul>
 					</nav>
 				</div>
@@ -94,19 +221,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		</div>
 	</div>
 <!-- //header -->
-<!-- banner -->
-	<div class="banner1">
-		<div class="container">
-			<h2 class=<a></a> <span>Research</span></h2>
-		</div>
-	</div>
-<!-- //banner -->
 <!-- about -->
 <div class="about">
     <div class="container">
-    	<h3 class=>Simulating changing water table</h3>
-			<p class="qui animated wow zoomIn" data-wow-delay="0s">	The Earth's hydrologic system includes complex links between many pieces: the ocean, ice sheets and glaciers, atmospheric water, rivers, and of course, lakes and groundwater. Groundwater is a vital resource and is widely used for irrigation and drinking water.
-				Although human impacts on groundwater are extensively studied, changes in groundwater and lake storage over longer time periods is not well understood. One important question is: how does long-term climate change influence global groundwater distribution?</p>
+    	<h3 class="animated wow zoomIn" data-wow-delay="0s">Simulating changing water table</h3>
+		<p class="qui animated wow zoomIn" data-wow-delay="0s">The Earth's hydrologic system includes complex links between many pieces: the ocean, ice sheets and glaciers, atmospheric water, rivers, and of course, lakes and groundwater. Groundwater is a vital resource and is widely used for irrigation and drinking water.
+			Although human impacts on groundwater are extensively studied, changes in groundwater and lake storage over longer time periods is not well understood. One important question is: how does long-term climate change influence global groundwater distribution?</p>
         <div class="about-grids">
             <div class="col-md-6 about-grids-left">
                     <div class="panel panel-default">
@@ -119,119 +239,30 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						</div>
 						<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
 						    <div class="panel-body panel_text">
-
 								Over the last deglaciation (21,000 years ago to present day), changes in sea level and ice volume under a changing climate are a key area of research.
 								Sea level rose by ~120-130 m during this time period as massive ice sheets melted and retreated. However, changes in the water table - representative
 								of groundwater and lake water storage - are not well understood. We are only now beginning to understand even the order of magnitude of changes
 								in these water stores between the Last Glacial Maximum (LGM) and the present day.
 								In my research, I use the Water Table Model to simulate changes in global water table over hundreds to thousands of years. Preliminary results indicate
 								that additional water stored in and on the ground at LGM accounted for sea level change in the order of several decimetres.
-
-
 						    </div>
 						</div>
 					</div>
-
-
-                    <div class="panel panel-default">
-                    </div>
             </div>
         </div>
 		<div class="col-md-6 about-grids-right animated wow slideInLeft" data-wow-delay="0s" style="z-index:100" position="relative" >
 		    <img src="images/coupled_model_NA.png" alt=" " class="img-responsive" />
-		    		    <p> <em> Simulated water table relative to the land surface for the North American continent. </em></p>
-
-			<div class="panel panel-default">
-				<div class="panel-body panel_text">
-				<br><br><br>
-				<br><br><br>
-				<br><br><br>
-				<br><br><br>
-
-				    <div class="clearfix"> </div>
-			    </div>
-     		</div>
-	    </div>
-
-	    <div class="about-grids">
+		    <p> <em> Simulated water table relative to the land surface for the North American continent. </em></p>
+		</div>
+		<div class="about-grids">
             <div class="col-md-6 about-grids-left animated wow slideInRight" data-wow-delay="0s" z-index=50 position="relative" >
                 <img src="images/GIA.png" alt=" " class="img-responsive" />
        		    <p> <em> Changing ice volume results in changes to the Earth's surface through Glacial Isostatic Adjustment. </em></p>
-
      		</div>
         </div>
-
-
-
-
-
-        <div class="about-grids">
-		    <div class="col-md-6 about-grids-right">
-					<div class="panel panel-default">
-						<div class="panel-heading panel-heading-sub" role="tab" id="headingOne">
-			                <h4 class="panel-title asd">
-							<a>
-                               Water table and Glacial Isostatic Adjustment
-							</a>
-							</h4>
-						</div>
-						<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-     						<div class="panel-body panel_text">
-							    Glacial Isostatic Adjustment (GIA) is the change in elevation of the Earth's surface as a result of changing surface loads as ice advances or retreats. The Earth's lithosphere and mantle adjust to changes in surface loading: a growing ice sheet provides an increased surface load, and the Earth surface will subside. Once the ice melts, the Earth surface adjusts to the lessening of the load and uplift (post-glacial rebound) occurs. This includes both elastic changes in the lithosphere, and viscous changes in the mantle. Changes in land surface elevation due to post-glacial rebound can be dramatic, reaching values up to hundreds of metres, and rebound resulting from the melting of the Laurentide and Fennoscandian ice sheets is still ongoing.
-				      <br><br>
-
-							    With this in mind, we ask: what about the impact of changing lake and groundwater storage on GIA? By incorporating these changes into a GIA model, we can determine how significant their impact is. Preliminary work indicates that local sea level is affected by several metres when taking the impact of lakes and groundwater on GIA into account.
-						    </div>
-						</div>
-					</div>
-			</div>
-			<div class="clearfix"> </div>
-		</div>
 	</div>
 </div>
 
-
-<div class="about">
-    <div class="container">
-        <h3 class="animated wow zoomIn" data-wow-delay="0s">Analysing landscapes</h3>
-        <div class="about-grids">
-            <div class="col-md-6 about-grids-left">
-                <div class="panel panel-default">
-                    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-                        <div class="panel-body panel_text">
-                           I use computational tools to improve our understanding of landscapes and simplify landscape analysis. An example is the <a href="https://doi.org/10.5281/zenodo.3238558" target="_blank">   Depression Hierarchy algorithm</a>, which assesses a landscape and determines the topological and topographical relationships between all depressions. This includes depression volumes, overflow points, and other information. This algorithm allows researchers to include depressions (which could become lakes, an important part of the hydrologic system) in landscape analysis, rather than overlooking these.
-<br><br>
-                           The <a href="https://doi.org/10.5281/zenodo.3755142" target="_blank">  Fill-Spill-Merge algorithm</a> makes use of the depression hierarchy to rapidly determine water levels in depressions across a landscape. This can be used in a wide range of applications, from global-scale hydrologic modelling, to local assessments of urban flooding, to understanding drainage in agricultural areas.
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-6 about-grids-right animated wow slideInLeft" data-wow-delay="0s">
-                <img src="images/depression_hierarchies.png" alt=" " class="img-responsive" />
-		    <p> <em> The depression hierarchy describes the topological and topographical relationship between depressions in a landscape. </em></p>
-		    		        <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-                  	<div class="panel-body panel_text">
-                        <p> <b> Relevant papers </b> </p>
-				        <p> <a href="images/Callaghan_Wickert_2019.pdf" target="_blank">
-				        Computing water flow through complex landscapes – Part 1: Incorporating depressions in flow routing using FlowFill </a></p>
-                        <br>
-				        <p><a href="images/Barnes_Callaghan_Wickert_2020.pdf" target="_blank"> Computing water flow through complex landscapes – Part 2: Finding hierarchies in depressions and morphological segmentations </a></p>
-                        <br>
-				        <p><a href="images/Barnes_Callaghan_Wickert_2021.pdf" target="_blank"> Computing water flow through complex landscapes – Part 3: Fill-Spill-Merge: Flow routing in depression hierarchies </a></p>
-                        <br>
-                    </div>
-                </div>
-            </div>
-            <div class="clearfix"> </div>
-        </div>
-    </div>
-</div>
-
-
-
-
-<!-- //about -->
 <!-- footer -->
 	<div class="footer"><a name="CONTACT"></a>
 		<div class="container">
@@ -239,15 +270,9 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<div class="col-md-4 footer-grid ">
                     <h3>Contact</h3>
                     <p>Email: mhaghi2@uic.edu</p>
-                    <!--<p>Phone: XXX-XXX-XXXX</p> -->
-                    <!--<p>Office: XXXXXX</p> -->
-
 				</div>
                 <div class="col-md-4 footer-grid ">
                     <br><br><br>
-                      <!--<p>Mail: MC XXX-XX</p> -->
-                      <!--<p>1200 E. California Blvd.</p> -->
-                      <!--<p>Pasadena, CA 91125</p> -->
                 </div>
                 <div class="clearfix"> </div>
 			</div>
@@ -257,38 +282,23 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						<li class="active"><a href="index.html">Home</a></li>
 						<li class="menu__item"><a href="research_edit.html" class="menu__link"><span class="menu__helper">Research</span></a></li>
 						<li class="menu__item"><a href="publications.html" class="menu__link"><span class="menu__helper">Publications</span></a></li>
-					<!--	<li class="menu__item"><a href="interests.html" class="menu__link"><span class="menu__helper">Interests & Resources</span></a></li> -->
-			    			
-			    						    	<li class="menu__item"><a href="github.html" class="menu__link"><span class="menu__helper">Github</span></a></li>
+						<li class="menu__item"><a href="github.html" class="menu__link"><span class="menu__helper">Github</span></a></li>
 					</ul>
-				</div>
-				<div class="footer-grids1-right">
-					<!--<p class="animated wow slideInRight" data-wow-delay=".01s">Design by <a href="http://w3layouts.com/">W3layouts</a></p>-->
 				</div>
 				<div class="clearfix"> </div>
 			</div>
 		</div>
 	</div>
 <!-- //footer -->
-	
+
 <!-- for bootstrap working -->
 	<script src="js/bootstrap.js"></script>
 <!-- //for bootstrap working -->
 <!-- here stars scrolling icon -->
 	<script type="text/javascript">
 		$(document).ready(function() {
-			/*
-				var defaults = {
-				containerID: 'toTop', // fading element id
-				containerHoverID: 'toTopHover', // fading element hover id
-				scrollSpeed: 1200,
-				easingType: 'linear' 
-				};
-			*/
-								
 			$().UItoTop({ easingType: 'easeOutQuart' });
-								
-			});
+		});
 	</script>
 <!-- //here ends scrolling icon -->
 </body>
