@@ -53,7 +53,6 @@ body {
 
 .about {
     background-color: #ffffff; /* white */
-    padding: 30px;
 }
 
 /* Center name, make it bold and bigger, and change color to black */
@@ -93,35 +92,14 @@ body {
     padding-bottom: 1cm; /* Add space on bottom */
 }
 
-/* Panel Style to Match the Uploaded Image */
-.panel {
-    border: 1px solid #ddd; 
-    border-radius: 4px;
-    margin-bottom: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+/* Remove large banner */
+.banner1 {
+    display: none;
 }
 
-.panel-primary {
-    border-color: #007bff; /* Blue border */
-}
-
-.panel-primary > .panel-heading {
-    background-color: #007bff; /* Blue heading background */
-    color: #fff; /* White heading text */
-    border-color: #007bff; /* Blue border */
-    font-weight: bold;
-    font-size: 16px;
-}
-
-.panel-title {
-    margin: 0;
-    font-weight: bold;
-}
-
-.panel-body {
-    padding: 15px;
-    font-size: 14px;
-    line-height: 1.6;
+/* Move figure to right */
+.about-grids-right {
+    float: right;
 }
 
 /* Align and format body text for readability */
@@ -129,9 +107,24 @@ body {
     text-align: justify; /* Justify text for even alignment */
     line-height: 1.6; /* Improve readability with spacing */
     margin-bottom: 1em; /* Add spacing between paragraphs */
+    font-weight: normal; /* Make normal text */
 }
 
-/* Social media button styles */
+/* Bold specific headings */
+.panel-body h2 {
+    font-weight: bold; /* Keep headings bold */
+}
+
+/* Change specific text to blue */
+.panel-heading p a, .panel-heading a {
+    color: #007bff; /* Blue color */
+}
+
+.panel-heading a:hover {
+    color: #0056b3; /* Darker blue on hover */
+}
+
+/* Social media button styles with blue buttons */
 .social-links a {
     margin: 10px;
     display: inline-block;
@@ -153,7 +146,7 @@ body {
     background-color: #00BFFF; /* Darker blue on hover */
 }
 
-/* Footer Styles */
+/* Change footer background color to darker gray */
 .footer {
     background-color: #d3d3d3; /* Darker gray */
     color: #333333; /* Dark gray text */
@@ -161,11 +154,13 @@ body {
     border-top: 4px solid #333; /* Add border line similar to top */
 }
 
+/* Change footer text to dark blue */
 .footer h3, .footer p, .footer a {
     color: #003366; /* Dark blue */
     text-decoration: none;
 }
 
+/* Change name in footer to black */
 .footer h3 {
     color: #000000; /* Black */
 }
@@ -173,6 +168,16 @@ body {
 .footer a:hover {
     color: #002244; /* Darker blue on hover */
 }
+
+/* Change footer tabs to black */
+.footer-grids1-left ul li a {
+    color: black;
+}
+
+.footer-grids1-left ul li a:hover {
+    color: #333333; /* Slightly darker black on hover */
+}
+
 </style>
 
 </head>
@@ -216,15 +221,65 @@ body {
 <div class="about">
     <div class="container">
         <div class="about-grids">
-            <div class="col-md-12 about-grids-left">
-                <!-- Box for Section Matching Uploaded Image -->
-                <div class="panel panel-primary">
-                    <div class="panel-heading">
-                        <h3 class="panel-title">Characterizing Karst Aquifers with Hydrodynamical and Hydrochemical Methods</h3>
+            <div class="col-md-6 about-grids-left">
+                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-default">
+                        <!-- Box for "Welcome to My Website" -->
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">Welcome to My Website</h3>
+                            </div>
+                            <div class="panel-body">
+                                <p>I am a Ph.D. student at the University of Illinois Chicago, currently specializing in Earth and Environmental Sciences. My research is centered around using the Water Table Model (WTM) to predict climate-induced changes in global water tables from 1500CE to 3000CE, with a focus on understanding groundwater resources and the impact of climate variables. By analyzing data from both historical records and future projections, my work aims to enhance water resource management and support climate change adaptation strategies.</p>
+
+                                <p>I hold a Master's degree in Hydrogeology from the University of Tehran, where my research involved hydrochemical and isotopic analysis of karst aquifers in the Hashtgerd Basin, Iran. This study highlighted the critical nature of karst aquifers for regional drinking water supply and underscored the importance of effective water resource management to mitigate the impacts of drilling activities. My undergraduate research at Kharazmi University examined runoff harvesting for agricultural water consumption in arid regions, using remote sensing and field visits to develop sustainable water management solutions.</p>
+
+                                <p>Beyond my academic research, I have experience as a teaching assistant in courses ranging from hydrogeology to global environmental change, and I have actively contributed to the scientific community as a reviewer for journals in water resource management. My diverse background in hydrogeology, climate change, and environmental sciences reflects my commitment to addressing critical challenges in water sustainability and climate resilience.</p>
+                            </div>
+                        </div>
+
+                        <!-- Box for "News" -->
+                        <div class="panel panel-primary">
+                            <div class="panel-heading">
+                                <h3 class="panel-title">News</h3>
+                            </div>
+                            <div class="panel-body">
+                                <p><b><em>October 2024:</em></b> I'm delighted to announce that my abstract, focusing on using the Water Table Model (WTM) to predict climate-induced changes in North American water table levels from 2020 to 2100, has been accepted for presentation at the AGU24 conference this December in Washington, D.C.</p>
+                                <p><b><em>July 2024:</em></b> A new study explores the feasibility of constructing a runoff reservoir in Kariyan village, Hormozgan, Iran, utilizing remote sensing and field analysis to enhance agricultural water management in response to inconsistent rainfall patterns.</p>
+                                <p><b><em>February 2024:</em></b> A recent study utilizing fuzzy logic models (FAHP) and analytical hierarchy processes (AHP) unveils significant potential for karst aquifer development in North Iran's Hashtgerd watershed, offering insights into addressing water scarcity through unconventional water resources.</p>
+                                <p><b><em>August 2023:</em></b> I have embarked on my Ph.D. journey in Earth and Environmental Sciences at the University of Illinois Chicago, focusing on predicting global water table changes due to climate impacts.</p>
+                                <p><b><em>June 2022:</em></b> I successfully completed my Master’s in Hydrogeology at the University of Tehran, where I focused on hydrochemical and isotopic analysis of karst aquifers.</p>
+                                <p><b><em>April 2021:</em></b> New study reveals the comparative economic and engineering advantages of constructing freshwater reservoirs across Iran’s provinces, with Khorasan-South emerging as the most economical.</p>
+                                <p><b><em>September 2020:</em></b> I’m excited to have started my Master’s in Hydrogeology at the University of Tehran, focusing on the fascinating study of karst aquifers and their hydrochemical dynamics.</p>
+                            </div>
+                        </div>
+
                     </div>
-                    <div class="panel-body">
-                        <p>My research focuses on characterizing karst aquifers in the Hashtgerd Basin, located in northern Iran. Given that around 15% of the basin is covered by karst rocks, which supply approximately 30% of the region's drinking water, it is essential to understand the dynamics and behavior of these aquifers. The study employs hydrodynamical, hydrochemical, and isotopic investigations to analyze water from springs, qanats, and alluvial wells during both wet and dry seasons. This multi-disciplinary approach reveals that the dominant water types are calcium and magnesium-bicarbonate, arising from the dissolution of calcite and dolomite.</p>
-                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 about-grids-right">
+                <img src="images/thumbnail_81658.jpg" alt="Mohammad Haghiri" class="img-responsive" />
+                <div class="panel-heading panel_text">
+                    <h3>Mohammad Haghiri</h3>
+                    <p>Ph.D Student, University of Illinois Chicago</p>
+                    <p><a href="https://eaes.uic.edu/profiles/haghiri-mohammad/" target="_blank">Department of Earth and Environmental Sciences (UIC)</a></p>
+                    <a href="images/Mohammad Haghiri_CV_public.pdf" target="_blank">CV</a>
+                </div>
+
+                <!-- Social media buttons -->
+                <div class="social-links">
+                    <a href="https://scholar.google.com/citations?hl=nl&user=0_YEtSYAAAAJ" target="_blank">
+                        <span class="btn">Google Scholar</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/mohammad-haghiri77/" target="_blank">
+                        <span class="btn">LinkedIn</span>
+                    </a>
+                    <a href="https://www.researchgate.net/profile/Mohammad-Haghiri" target="_blank">
+                        <span class="btn">ResearchGate</span>
+                    </a>
+                    <a href="https://orcid.org/0000-0003-0528-4260" target="_blank">
+                        <span class="btn">ORCID</span>
+                    </a>
                 </div>
             </div>
         </div>
