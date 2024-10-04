@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-102176832-1"></script>
@@ -110,18 +110,45 @@ body {
     font-weight: normal; /* Make normal text */
 }
 
-/* Bold specific headings */
-.panel-body h2 {
-    font-weight: bold; /* Keep headings bold */
+/* Panel Styling for Each Section */
+.panel {
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow effect */
+    margin-bottom: 20px; /* Add space between sections */
+}
+
+/* Panel Heading Styling */
+.panel-heading {
+    background-color: #e9f7fd; /* Light blue background */
+    padding: 15px; /* Padding for better spacing */
+    border-top-left-radius: 8px; /* Rounded corners at top */
+    border-top-right-radius: 8px;
+}
+
+.panel-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #007bff; /* Darker blue text */
+}
+
+/* Panel Body Styling */
+.panel-body {
+    background-color: #ffffff; /* White background */
+    padding: 15px; /* Padding for content */
+    border-bottom-left-radius: 8px; /* Rounded corners at bottom */
+    border-bottom-right-radius: 8px;
+    font-size: 16px; /* Improve readability */
+}
+
+/* Panel Title Hover Effect */
+.panel-heading a:hover {
+    color: #0056b3; /* Darker blue on hover */
+    text-decoration: none;
 }
 
 /* Change specific text to blue */
 .panel-heading p a, .panel-heading a {
     color: #007bff; /* Blue color */
-}
-
-.panel-heading a:hover {
-    color: #0056b3; /* Darker blue on hover */
 }
 
 /* Social media button styles with blue buttons */
