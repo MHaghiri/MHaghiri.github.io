@@ -101,12 +101,19 @@ body {
 
 /* Panel Heading Styling */
 .panel-heading {
-    background-color: #f8f9fa; /* Light gray background */
+    background-color: #d3d3d3 !important; /* Explicit gray background */
     padding: 15px; /* Padding for better spacing */
     border-bottom: 1px solid #ddd; /* Border at bottom for separation */
     font-size: 18px;
     font-weight: bold;
-    color: #343a40; /* Dark text */
+    color: #000000; /* Black text */
+}
+
+/* Remove any bootstrap class overrides */
+.panel-primary .panel-heading {
+    background-color: #d3d3d3 !important;
+    color: #000000 !important;
+    border-color: #ddd;
 }
 
 /* Panel Body Styling */
@@ -114,12 +121,6 @@ body {
     background-color: #ffffff; /* White background */
     padding: 15px; /* Padding for content */
     font-size: 14px; /* Improve readability */
-}
-
-/* Panel Title Hover Effect */
-.panel-heading a:hover {
-    color: #0056b3; /* Darker blue on hover */
-    text-decoration: none;
 }
 
 /* Align and format body text for readability */
