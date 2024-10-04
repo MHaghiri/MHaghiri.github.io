@@ -54,6 +54,7 @@ body {
 
 .about {
     background-color: #ffffff; /* white */
+    padding: 20px 0;
 }
 
 /* Center name, make it bold and bigger, and change color to black */
@@ -96,11 +97,6 @@ body {
 /* Remove large banner */
 .banner1 {
     display: none;
-}
-
-/* Move figure to right */
-.about-grids-right {
-    float: right;
 }
 
 /* Align and format body text for readability */
@@ -181,7 +177,23 @@ body {
 
 /* Space between sections */
 .section-spacing {
-    margin-bottom: 60px; /* Increased space between sections */
+    margin-bottom: 80px; /* Increased space between sections */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about-grids-left, .about-grids-right {
+    width: 48%; /* Make text and image boxes evenly split */
+}
+
+.panel {
+    margin-bottom: 0; /* Remove bottom margin */
+    box-shadow: none; /* Remove panel shadow */
+}
+
+.panel-body {
+    padding: 15px;
 }
 
 </style>
@@ -233,7 +245,7 @@ body {
 
         <!-- Section 1: Water Table Simulation -->
         <div class="about-grids section-spacing">
-            <div class="col-md-6 about-grids-left">
+            <div class="about-grids-left">
                 <div class="panel panel-default">
                     <div class="panel-heading panel-heading-sub" role="tab" id="headingOne">
                         <h4 class="panel-title asd">
@@ -247,7 +259,7 @@ body {
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 about-grids-right animated wow slideInLeft" data-wow-delay="0s">
+            <div class="about-grids-right animated wow slideInLeft" data-wow-delay="0s">
                 <img src="images/WTM.jpg" alt="Water Table Simulation" class="img-responsive" />
                 <p><em> Simulated water table evolution from 1500CE to 3000CE. </em></p>
             </div>
@@ -255,7 +267,7 @@ body {
 
         <!-- Section 2: Karst Aquifers -->
         <div class="about-grids section-spacing">
-            <div class="col-md-6 about-grids-left">
+            <div class="about-grids-left">
                 <div class="panel panel-default">
                     <div class="panel-heading panel-heading-sub" role="tab" id="headingTwo">
                         <h4 class="panel-title asd">
@@ -271,7 +283,7 @@ The primary objectives of this research are to delineate the hydrogeological fra
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 about-grids-right animated wow slideInLeft" data-wow-delay="0s">
+            <div class="about-grids-right animated wow slideInLeft" data-wow-delay="0s">
                 <img src="images/karst.jpg" alt="Karst Aquifer" class="img-responsive" />
                 <p><em> Characterizing karst aquifers through hydrodynamical and hydrochemical methods. </em></p>
             </div>
@@ -279,7 +291,7 @@ The primary objectives of this research are to delineate the hydrogeological fra
 
         <!-- Section 3: Rainwater Harvesting and Adaptation -->
         <div class="about-grids section-spacing">
-            <div class="col-md-6 about-grids-left">
+            <div class="about-grids-left">
                 <div class="panel panel-default">
                     <div class="panel-heading panel-heading-sub" role="tab" id="headingThree">
                         <h4 class="panel-title asd">
@@ -295,7 +307,7 @@ The objectives of this research are multifaceted. Firstly, I strive to pinpoint 
                     </div>
                 </div>
             </div>
-            <div class="col-md-6 about-grids-right animated wow slideInLeft" data-wow-delay="0s">
+            <div class="about-grids-right animated wow slideInLeft" data-wow-delay="0s">
                 <img src="images/rainwater.jpg" alt="Rainwater Harvesting" class="img-responsive" />
                 <p><em> Sustainable rainwater harvesting techniques for adaptation to water scarcity. </em></p>
             </div>
